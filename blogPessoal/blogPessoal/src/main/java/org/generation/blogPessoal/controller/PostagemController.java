@@ -1,13 +1,11 @@
 package org.generation.blogPessoal.controller;
 
-import java.time.LocalDate;
-import java.util.Date;
+
 import java.util.List;
 
 import org.generation.blogPessoal.model.Postagem;
 import org.generation.blogPessoal.repository.PostagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
