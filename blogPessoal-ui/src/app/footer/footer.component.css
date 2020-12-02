@@ -3,5 +3,23 @@
 }
 
 .bg-vermelho{
-    background-color: #7F7F7F;
+    background-color: black;
 }
+
+.faGithub, .faLinkedin, .faInstagram{
+    color:black;
+}
+
+.faGithub:hover{
+    color: #F24B4B;
+ }
+
+.faLinkedin:hover{
+    color: #F24B4B;
+}
+
+.faInstagram:hover{
+    color: #F24B4B;
+}
+
+
