@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
+  nome:  String = 'Lucas Trevizan'
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    
   }
+
 
 }
