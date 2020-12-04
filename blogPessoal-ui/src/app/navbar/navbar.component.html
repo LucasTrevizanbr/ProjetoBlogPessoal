@@ -15,21 +15,37 @@
              <img src="https://i.imgur.com/3to6yGe.png" width="30" height="30" alt="">
              Home <span class="sr-only">(página atual)</span></a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/feed'>
               <img src="https://i.imgur.com/uzlfv3U.png" width="30" height="30" alt="">
               Feed</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/login'>
-              <img src="https://i.imgur.com/hXGC8vO.png" width="30" height="30" alt="">
-              Login</a>
+
+          <div *ngIf='auth.btnLogin()'>
+            <li class="nav-item">
+              <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/login'>
+                <img src="https://i.imgur.com/hXGC8vO.png" width="30" height="30" alt="">
+                Login</a>
           </li>
+          </div>
+
+          <div *ngIf='auth.btnLogin()'>
+            <li class="nav-item">
+              <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/cadastro'>
+                <img src="https://i.imgur.com/4FXgiSl.png" width="30" height="30" alt="">
+                Cadastro</a>
+            </li>
+          </div>
+
+          <div *ngIf='auth.btnSair()'>  
           <li class="nav-item">
-            <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" routerLink='/cadastro'>
+            <a class="nav-link texto text-monospace text-uppercase font-weight-bold p-3" (click)='sair()'>
               <img src="https://i.imgur.com/4FXgiSl.png" width="30" height="30" alt="">
-              Cadastro</a>
+              Sair</a>
           </li>
+          </div>
+
         </ul>
       </div>
     </nav>

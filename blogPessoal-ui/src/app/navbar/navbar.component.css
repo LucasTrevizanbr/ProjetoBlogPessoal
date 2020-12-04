@@ -5,3 +5,7 @@
 body{
     background-color:#343A40;
 }
+
+a{
+    cursor: pointer;
+}
