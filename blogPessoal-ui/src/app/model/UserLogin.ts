@@ -4,5 +4,5 @@ export class UserLogin{
 	
 	public senha: String ;
 	
-	public token:String;
+	public token: string;
 }
