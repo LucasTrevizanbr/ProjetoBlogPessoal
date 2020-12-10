@@ -27,4 +27,12 @@ export class TemaService {
     return this.http.post<Tema>('http://localhost:9000/temas', tema, this.token)
   }
 
+  putTema(tema: Tema):Observable<Tema>{
+    return this.http.put<Tema>('http://localhost:9000/temas', tema, this.token)
+  }
+
+  deleteTema(id: number){
+    return this.http.delete(`http://localhost:9000/temas/${id}`, this.token)
+  }
+
 }
